@@ -36,7 +36,7 @@ export const TanishqHero: React.FC<TanishqHeroProps> = ({ onOpenResume }) => {
             href={PERSONAL_INFO.links.twitter}
             target="_blank"
             rel="noreferrer"
-            className="text-xs font-mono text-zinc-500 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors inline-flex items-center gap-1"
+            className="text-xs font-mono text-zinc-500 hover:text-accent transition-colors inline-flex items-center gap-1"
           >
             <span>{PERSONAL_INFO.handle}</span>
             <ArrowUpRight className="h-3 w-3" />

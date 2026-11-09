@@ -18,7 +18,7 @@ export const StackSection: React.FC = () => {
         {STACK_CATEGORIES.map((cat) => (
           <div key={cat.number} className="space-y-2">
             <div className="flex items-center gap-2">
-              <span className="font-mono text-xs text-cyan-600 dark:text-cyan-400 font-bold">
+              <span className="font-mono text-xs text-accent font-bold">
                 {cat.number}
               </span>
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 font-mono">

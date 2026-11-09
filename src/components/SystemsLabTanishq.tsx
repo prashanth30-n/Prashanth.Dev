@@ -75,7 +75,7 @@ export const SystemsLabTanishq: React.FC = () => {
         className="cursor-pointer flex items-center justify-between p-4 rounded-xl border border-zinc-200 dark:border-zinc-800/90 bg-zinc-50/60 dark:bg-zinc-950/40 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors"
       >
         <div className="flex items-center gap-2.5">
-          <Terminal className="h-4 w-4 text-cyan-600 dark:text-cyan-400" />
+          <Terminal className="h-4 w-4 text-accent" />
           <div>
             <h2 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 font-mono">
               Systems Lab & Interactive Sandboxes

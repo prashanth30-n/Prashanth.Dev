@@ -56,16 +56,16 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
         output = (
           <div className="space-y-1 text-slate-300">
             <div>Available commands:</div>
-            <div className="text-cyan-400">  projects    - Browse production systems & case studies</div>
-            <div className="text-cyan-400">  pubo        - Open Pubo layered Go system details</div>
-            <div className="text-cyan-400">  lore        - Open Lore Agent skill generator</div>
-            <div className="text-cyan-400">  skillsocket - Open SkillSocket real-time platform</div>
-            <div className="text-cyan-400">  lab         - Jump to interactive Systems Lab</div>
-            <div className="text-cyan-400">  philosophy  - View first-principles engineering mental models</div>
-            <div className="text-cyan-400">  github      - Open GitHub profile (prashanth30-n)</div>
-            <div className="text-cyan-400">  twitter     - Open Twitter profile (@prashanth_n369)</div>
-            <div className="text-cyan-400">  contact     - View contact email & links</div>
-            <div className="text-cyan-400">  clear       - Clear terminal history</div>
+            <div className="text-accent">  projects    - Browse production systems & case studies</div>
+            <div className="text-accent">  pubo        - Open Pubo layered Go system details</div>
+            <div className="text-accent">  lore        - Open Lore Agent skill generator</div>
+            <div className="text-accent">  skillsocket - Open SkillSocket real-time platform</div>
+            <div className="text-accent">  lab         - Jump to interactive Systems Lab</div>
+            <div className="text-accent">  philosophy  - View first-principles engineering mental models</div>
+            <div className="text-accent">  github      - Open GitHub profile (prashanth30-n)</div>
+            <div className="text-accent">  twitter     - Open Twitter profile (@prashanth_n369)</div>
+            <div className="text-accent">  contact     - View contact email & links</div>
+            <div className="text-accent">  clear       - Clear terminal history</div>
           </div>
         );
         break;
@@ -168,7 +168,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
         {/* Terminal Title Bar */}
         <div className="flex items-center justify-between border-b border-slate-800 px-4 py-3 bg-slate-950/80">
           <div className="flex items-center gap-2">
-            <Terminal className="h-4 w-4 text-cyan-400" />
+            <Terminal className="h-4 w-4 text-accent" />
             <span className="font-semibold text-slate-200">prashanth@sysops:~</span>
           </div>
 
@@ -185,7 +185,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
         <div className="p-4 max-h-[320px] overflow-y-auto space-y-3 bg-[#080B11]/90">
           {history.map((item, idx) => (
             <div key={idx} className="space-y-1">
-              <div className="flex items-center gap-2 text-cyan-400 font-semibold">
+              <div className="flex items-center gap-2 text-accent font-semibold">
                 <span>❯</span>
                 <span className="text-white">{item.cmd}</span>
               </div>
@@ -204,7 +204,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
             <button
               key={c}
               onClick={() => handleCommand(c)}
-              className="px-2 py-0.5 rounded bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-cyan-300 border border-slate-800 whitespace-nowrap"
+              className="px-2 py-0.5 rounded bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-accent border border-slate-800 whitespace-nowrap"
             >
               {c}
             </button>
@@ -213,7 +213,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
 
         {/* Input Form */}
         <form onSubmit={onSubmit} className="flex items-center border-t border-slate-800 px-4 py-3 bg-slate-950">
-          <span className="text-cyan-400 mr-2 font-bold">❯</span>
+          <span className="text-accent mr-2 font-bold">❯</span>
           <input
             ref={inputRef}
             type="text"
@@ -224,7 +224,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
           />
           <button
             type="submit"
-            className="p-1 text-slate-500 hover:text-cyan-400 transition-colors"
+            className="p-1 text-slate-500 hover:text-accent transition-colors"
             aria-label="Execute command"
           >
             <CornerDownLeft className="h-3.5 w-3.5" />

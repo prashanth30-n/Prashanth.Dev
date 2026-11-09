@@ -32,7 +32,7 @@ export const ArchitectureModal: React.FC<ArchitectureModalProps> = ({ project, o
         {/* Header */}
         <div className="flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 px-5 py-3.5 bg-zinc-50 dark:bg-[#161718]">
           <div className="flex items-center gap-2">
-            <Layers className="h-4 w-4 text-cyan-600 dark:text-cyan-400" />
+            <Layers className="h-4 w-4 text-accent" />
             <span className="text-xs font-mono font-semibold">
               {project.title} — System Architecture Spec
             </span>
@@ -93,7 +93,7 @@ export const ArchitectureModal: React.FC<ArchitectureModalProps> = ({ project, o
             href={project.githubUrl}
             target="_blank"
             rel="noreferrer"
-            className="text-cyan-600 dark:text-cyan-400 hover:underline flex items-center gap-1.5"
+            className="text-accent hover:underline flex items-center gap-1.5"
           >
             <Github className="h-3.5 w-3.5" />
             <span>View Source on GitHub</span>

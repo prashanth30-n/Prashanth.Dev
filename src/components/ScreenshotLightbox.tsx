@@ -44,7 +44,7 @@ export const ScreenshotLightbox: React.FC<ScreenshotLightboxProps> = ({ project,
         {/* Top Header */}
         <div className="flex items-center justify-between border-b border-zinc-800 px-5 py-3 bg-[#18191a]">
           <div className="flex items-center gap-2">
-            <ImageIcon className="h-4 w-4 text-cyan-400" />
+            <ImageIcon className="h-4 w-4 text-accent" />
             <span className="text-xs font-mono font-semibold">
               {project.title} Screenshots
             </span>
@@ -99,7 +99,7 @@ export const ScreenshotLightbox: React.FC<ScreenshotLightboxProps> = ({ project,
               onClick={() => setCurrentIndex(idx)}
               className={`relative h-14 w-14 rounded-md overflow-hidden border shrink-0 transition-all ${
                 currentIndex === idx
-                  ? 'border-cyan-400 ring-2 ring-cyan-500/30'
+                  ? 'border-accent ring-2 ring-white/30'
                   : 'border-zinc-800 opacity-60 hover:opacity-100'
               }`}
             >

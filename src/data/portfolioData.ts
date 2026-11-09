@@ -54,8 +54,8 @@ export const EDUCATION = {
 
 export const ACHIEVEMENTS = [
   {
-    title: "IIT Hyderabad Hackathon — Top 7 Finalist",
-    description: "Advanced through ideathon and 24-hour build rounds among 30+ competitive teams."
+    title: "Hacktoberfest — 2nd Prize Winner",
+    description: "Awarded 2nd Prize at IARE Hacktoberfest for Lore Agent, extracting and structuring repository PR review histories into verified Agent Skills."
   },
   {
     title: "Data Structures & Algorithms: 400+ Problems",

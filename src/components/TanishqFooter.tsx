@@ -57,7 +57,7 @@ export const TanishqFooter: React.FC<TanishqFooterProps> = ({ onOpenResume }) =>
           </a>
           <button
             onClick={onOpenResume}
-            className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors flex items-center gap-1"
+            className="hover:text-accent transition-colors flex items-center gap-1"
           >
             <FileText className="h-3 w-3" />
             <span>Resume</span>

@@ -32,7 +32,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         {/* Modal Top Bar */}
         <div className="flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800/80 px-4 py-3 bg-zinc-50 dark:bg-[#161718]">
           <div className="flex items-center gap-2">
-            <FileText className="h-4 w-4 text-cyan-600 dark:text-cyan-400" />
+            <FileText className="h-4 w-4 text-accent" />
             <span className="text-xs font-mono font-semibold">
               Prashanth_Nakirekanti_Resume.pdf
             </span>
@@ -52,7 +52,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               href={PERSONAL_INFO.resumePath}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono font-medium rounded-md bg-cyan-500 hover:bg-cyan-400 text-black font-semibold transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono font-medium rounded-md bg-accent hover:opacity-90 transition-opacity font-semibold shadow-sm"
             >
               <ExternalLink className="h-3.5 w-3.5" />
               <span>Open Tab</span>

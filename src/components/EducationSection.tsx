@@ -6,7 +6,7 @@ export const EducationSection: React.FC = () => {
   return (
     <section className="space-y-6 pb-10 border-b border-zinc-200 dark:border-zinc-800/80">
       <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 font-mono flex items-center gap-2">
-        <GraduationCap className="h-4 w-4 text-cyan-600 dark:text-cyan-400" />
+        <GraduationCap className="h-4 w-4 text-accent" />
         <span>Education & Background</span>
       </h2>
 
@@ -48,14 +48,25 @@ export const EducationSection: React.FC = () => {
           {ACHIEVEMENTS.map((item, idx) => (
             <div
               key={idx}
-              className="p-3.5 rounded-lg border border-zinc-200 dark:border-zinc-800/70 bg-zinc-50/30 dark:bg-zinc-950/20 flex items-start gap-3"
+              className={`p-3.5 rounded-lg border transition-colors flex items-start gap-3 ${
+                item.title.includes('Hacktoberfest')
+                  ? 'border-purple-300 dark:border-purple-800/80 bg-purple-50/50 dark:bg-purple-950/20'
+                  : 'border-zinc-200 dark:border-zinc-800/70 bg-zinc-50/30 dark:bg-zinc-950/20'
+              }`}
             >
-              <Award className="h-4 w-4 text-amber-500 shrink-0 mt-0.5" />
-              <div>
-                <div className="text-xs font-semibold text-zinc-900 dark:text-zinc-200 font-mono">
-                  {item.title}
+              <Award className={`h-4 w-4 shrink-0 mt-0.5 ${item.title.includes('Hacktoberfest') ? 'text-purple-600 dark:text-purple-400' : 'text-amber-500'}`} />
+              <div className="space-y-0.5">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-semibold text-zinc-900 dark:text-zinc-100 font-mono">
+                    {item.title}
+                  </span>
+                  {item.title.includes('Hacktoberfest') && (
+                    <span className="text-[10px] font-mono px-1.5 py-0.2 rounded border border-purple-400/40 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300">
+                      2nd Prize
+                    </span>
+                  )}
                 </div>
-                <div className="text-xs text-zinc-600 dark:text-zinc-400 mt-0.5">
+                <div className="text-xs text-zinc-600 dark:text-zinc-400">
                   {item.description}
                 </div>
               </div>

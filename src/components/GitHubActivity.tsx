@@ -47,7 +47,7 @@ export const GitHubActivity: React.FC = () => {
           href={PERSONAL_INFO.links.github}
           target="_blank"
           rel="noreferrer"
-          className="text-xs font-mono text-zinc-500 hover:text-cyan-600 dark:hover:text-cyan-400 flex items-center gap-1"
+          className="text-xs font-mono text-zinc-500 hover:text-accent flex items-center gap-1"
         >
           <span>github.com/{PERSONAL_INFO.links.github.split('/').pop()}</span>
           <ExternalLink className="h-3 w-3" />

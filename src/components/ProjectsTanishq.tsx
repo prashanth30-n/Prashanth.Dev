@@ -95,7 +95,7 @@ export const ProjectsTanishq: React.FC<ProjectsTanishqProps> = ({
                   href={project.githubUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 text-zinc-700 dark:text-zinc-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
+                  className="inline-flex items-center gap-1.5 text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors"
                 >
                   <Github className="h-3.5 w-3.5" />
                   <span>GitHub</span>
@@ -105,7 +105,7 @@ export const ProjectsTanishq: React.FC<ProjectsTanishqProps> = ({
                 {hasScreenshots && (
                   <button
                     onClick={() => onOpenScreenshots(project)}
-                    className="inline-flex items-center gap-1.5 text-cyan-700 dark:text-cyan-400 hover:underline transition-colors"
+                    className="inline-flex items-center gap-1.5 text-accent hover:underline transition-colors"
                   >
                     <Image className="h-3.5 w-3.5" />
                     <span>Screenshots ({project.screenshots?.length})</span>

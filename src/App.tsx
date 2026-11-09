@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { TanishqHeader } from './components/TanishqHeader';
+import { TanishqHeader, PaletteName } from './components/TanishqHeader';
 import { TanishqHero } from './components/TanishqHero';
 import { GitHubActivity } from './components/GitHubActivity';
 import { EducationSection } from './components/EducationSection';
@@ -23,9 +23,19 @@ export default function App() {
     if (typeof window !== 'undefined') {
       const stored = localStorage.getItem('theme');
       if (stored) return stored === 'dark';
-      return true; // Default to dark mode like tanishqlabs.in
+      return true; // Default to dark mode
     }
     return true;
+  });
+
+  const [palette, setPalette] = useState<PaletteName>(() => {
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('palette') as PaletteName;
+      if (stored && ['zinc', 'cyan', 'emerald', 'amber', 'violet'].includes(stored)) {
+        return stored;
+      }
+    }
+    return 'cyan';
   });
 
   const [isResumeOpen, setIsResumeOpen] = useState(false);
@@ -33,7 +43,7 @@ export default function App() {
   const [selectedArchitectureProject, setSelectedArchitectureProject] = useState<Project | null>(null);
   const [isTerminalOpen, setIsTerminalOpen] = useState(false);
 
-  // Sync dark class on <html> element
+  // Sync dark class and palette attribute on <html> element
   useEffect(() => {
     const root = document.documentElement;
     if (darkMode) {
@@ -45,6 +55,12 @@ export default function App() {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    root.setAttribute('data-palette', palette);
+    localStorage.setItem('palette', palette);
+  }, [palette]);
+
   const toggleTheme = () => {
     setDarkMode((prev) => !prev);
   };
@@ -53,10 +69,12 @@ export default function App() {
     <div className="min-h-screen bg-[#fbfbfb] dark:bg-[#0c0d0e] text-[#171717] dark:text-[#ededed] transition-colors duration-200">
       {/* Central Narrow Container Matching tanishqlabs.in layout */}
       <div className="mx-auto max-w-2xl px-5 sm:px-6 py-4 flex flex-col min-h-screen">
-        {/* Top Header with India Time & Theme Switcher */}
+        {/* Top Header with India Time & Theme Switcher & Palette Picker */}
         <TanishqHeader
           darkMode={darkMode}
           onToggleTheme={toggleTheme}
+          palette={palette}
+          onSelectPalette={setPalette}
           onOpenTerminal={() => setIsTerminalOpen(true)}
         />
 
@@ -68,7 +86,7 @@ export default function App() {
           {/* GitHub Contributions Heatmap */}
           <GitHubActivity />
 
-          {/* Education & Background (GRIET CGPA 8.79 + Hackathons) */}
+          {/* Education & Background (GRIET CGPA 8.79 + Hacktoberfest 2nd Prize) */}
           <EducationSection />
 
           {/* Numbered Technical Stack */}
