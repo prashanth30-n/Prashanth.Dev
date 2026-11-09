@@ -48,8 +48,7 @@ export const EDUCATION = {
   shortName: "GRIET, Hyderabad",
   degree: "Bachelor of Technology in Computer Science and Engineering",
   cgpa: "8.79",
-  location: "Hyderabad, India",
-  period: "2022 — 2026"
+  location: "Hyderabad, India"
 };
 
 export const ACHIEVEMENTS = [

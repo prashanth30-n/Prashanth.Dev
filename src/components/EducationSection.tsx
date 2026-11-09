@@ -27,7 +27,7 @@ export const EducationSection: React.FC = () => {
               CGPA: {EDUCATION.cgpa}
             </span>
             <div className="text-[11px] font-mono text-zinc-500 mt-0.5">
-              {EDUCATION.location} · {EDUCATION.period}
+              {EDUCATION.location}
             </div>
           </div>
         </div>
