@@ -47,15 +47,13 @@ export const TanishqHero: React.FC<TanishqHeroProps> = ({ onOpenResume }) => {
       {/* Bio Copy (tanishqlabs.in style) */}
       <div className="space-y-3 text-sm sm:text-base text-zinc-700 dark:text-zinc-300 leading-relaxed font-sans">
         <p>
-          I write <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Go</strong> (mostly), 
-          build autonomous multi-agent systems with the <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">AWS Strands SDK</strong>, 
-          and engineer resilient distributed backends.
+          <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Philomath</strong> &amp; <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Fullstack developer</strong> who mostly writes <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Go</strong>. I love exploring and building things.
         </p>
         <p className="text-zinc-600 dark:text-zinc-400">
           Open source and first principles is where most of my serious work lives.
         </p>
         <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
-          {PERSONAL_INFO.availability}
+          Available for full-time roles, contracts, and internships.
         </p>
       </div>
 

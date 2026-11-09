@@ -23,7 +23,7 @@ export const PERSONAL_INFO = {
   name: "Prashanth Nakirekanti",
   displayName: "PRASHANTH NAKIREKANTI",
   handle: "@prashanth_n369",
-  title: "Backend & Systems Engineer",
+  title: "Philomath · Fullstack Developer",
   email: "prashanthnakerikanti@gmail.com",
   phone: "+91-8919725027",
   location: "Hyderabad, India",
@@ -38,9 +38,9 @@ export const PERSONAL_INFO = {
     email: "mailto:prashanthnakerikanti@gmail.com",
     leetcode: "https://leetcode.com/u/prashanth30-n/"
   },
-  bio: "I write Go (mostly), build autonomous multi-agent systems with the AWS Strands SDK, and engineer resilient distributed backends.",
+  bio: "Philomath & Fullstack developer who mostly writes Go. I love exploring and building things.",
   bioSecondary: "Open source and first principles is where most of my serious work lives.",
-  availability: "Available for full-time, contract, and internships in Backend Engineering, Systems, and Distributed AI Systems."
+  availability: "Available for full-time roles, contracts, and internships."
 };
 
 export const EDUCATION = {
