@@ -49,9 +49,6 @@ export const TanishqHero: React.FC<TanishqHeroProps> = ({ onOpenResume }) => {
         <p>
           <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Philomath</strong> &amp; <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Fullstack developer</strong> who mostly writes <strong className="text-zinc-900 dark:text-zinc-100 font-semibold">Go</strong>. I love exploring and building things.
         </p>
-        <p className="text-zinc-600 dark:text-zinc-400">
-          Open source and first principles is where most of my serious work lives.
-        </p>
         <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
           Available for full-time roles, contracts, and internships.
         </p>

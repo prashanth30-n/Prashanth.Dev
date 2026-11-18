@@ -39,7 +39,6 @@ export const PERSONAL_INFO = {
     leetcode: "https://leetcode.com/u/prashanth30-n/"
   },
   bio: "Philomath & Fullstack developer who mostly writes Go. I love exploring and building things.",
-  bioSecondary: "Open source and first principles is where most of my serious work lives.",
   availability: "Available for full-time roles, contracts, and internships."
 };
 

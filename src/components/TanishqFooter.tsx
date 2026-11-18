@@ -78,10 +78,6 @@ export const TanishqFooter: React.FC<TanishqFooterProps> = ({ onOpenResume }) =>
           <ArrowUp className="h-3.5 w-3.5" />
         </button>
       </div>
-
-      <div className="text-center text-[11px] text-zinc-400 dark:text-zinc-600 italic pt-4">
-        Still scrolling? You're persistent. I like that. 👀
-      </div>
     </footer>
   );
 };
